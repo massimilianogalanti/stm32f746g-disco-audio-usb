@@ -24,6 +24,11 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "stm32746g_discovery_audio.h"
+
+
+extern void Application_Init(void);
+extern void Application_Tick(void);
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,17 +111,18 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-	MX_USB_DEVICE_Init();
+  Application_Init();
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	while (1) {
-    /* USER CODE END WHILE */
+  while (1) {
+  /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-	}
+  /* USER CODE BEGIN 3 */
+    Application_Tick();
+  }
   /* USER CODE END 3 */
 }
 
