@@ -1,0 +1,18 @@
+# for STM32CubeIDE
+*.crf
+*.d
+*.o
+*.su
+*.mk
+*.axf
+*.lnp
+*.map
+*.sct
+*.dep
+*.htm
+*.iex
+*.hex
+*.bin
+*.elf
+Debug/
+Release/
